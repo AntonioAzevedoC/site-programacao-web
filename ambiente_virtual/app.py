@@ -36,9 +36,9 @@ def calc2grau():
     x2 = ((b * -1) - math.sqrt(delta)) / (a * 2)
     return render_template("calculo2grau.html", x1 = x1, x2 = x2, delta = "") 
 
-@app.route("/calc_fahrenheit", methods=["POST"])
+@app.route("/calc_fahrenheit", methods=["GET"])
 def calcFahr():
-    c = float(request.form["celsius"])
+    c = float(request.args.get("celsius"))
     fahr = (c * 1.8) + 32
 
     return render_template("fahrenheit.html", f = fahr) 
