@@ -1,0 +1,22 @@
+{% extends "base.html" %} {% block content %}
+
+<html lang="pt-br">
+  <body>
+    <div class="container mt-4 pt-3">
+      <div class="jumbotron pt-5">
+        <h1 class="display-4">Bem-vindo a Matemática</h1>
+        <p class="lead">Este é um exemplo de algumas fórmulas Matemáticas.</p>
+        <hr class="my-4" />
+        <p>Escolha uma das opções abaixo:</p>
+        <a class="btn btn-primary btn-lg" href="/pageCalc2Grau" role="button"
+          >Calcular Equação do 2º Grau</a
+        >
+        <a class="btn btn-success btn-lg" href="/pageCalcFahr" role="button"
+          >Converter Celsius para Fahrenheit</a
+        >
+      </div>
+    </div>
+  </body>
+
+  {% endblock %}
+</html>
